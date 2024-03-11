@@ -1,6 +1,6 @@
 # Stoic Chat Resource
 
-![Untitled (250 × 250 px)](https://github.com/5M-CodeX/codex-chat/assets/112611821/0b5a4139-f022-48d7-a925-2eddd3265960)
+https://dunb17ur4ymx4.cloudfront.net/packages/images/5d4530946e2d881948ab5f97de5e2101aa428679.png
 
 
 Thank you for choosing 5M-CodeX Chat Resource! This README.md document provides detailed instructions on how to edit the configuration file to tailor the chat experience to your preferences and requirements.
