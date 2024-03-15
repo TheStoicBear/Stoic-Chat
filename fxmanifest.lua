@@ -12,11 +12,11 @@ client_scripts {
     'source/cl_chat.lua',
     'source/rp/c_hr.lua',
     'source/rp/c_ufind.lua',
-	'source/randomizer/*.lua',
+    'source/randomizer/*.lua',
     'source/911/client.lua',
     'source/panic/client.lua',
     'source/fines/client.lua',
-	'source/towjob/client.lua',
+    'source/towjob/client.lua',
     'source/utils/client.lua',
     'source/id/c_id.lua',
     'source/hud/client.lua',
@@ -35,12 +35,12 @@ server_scripts {
     'source/notifications/server.lua',
     'source/fines/server.lua',
     'source/utils/server.lua',
-	'source/tags/s_tags.lua',
-	'source/feed/s_chat.lua',
-	'source/feed/s_feed.lua',
-	'source/feed/staffcomands.lua',
-	'source/discord/hooks.lua',
-	'source/towjob/server.lua',
+    'source/tags/s_tags.lua',
+    'source/feed/s_chat.lua',
+    'source/feed/s_feed.lua',
+    'source/feed/staffcomands.lua',
+    'source/discord/hooks.lua',
+    'source/towjob/server.lua',
     'source/id/s_id.lua',
     'source/medical/server.lua',
     'source/creatorcodes/server.lua',
@@ -61,13 +61,10 @@ files {
     'html/style.css'
 }
 
-escrow_ignore {
-    'config/c_3did.lua',
-    'config/c_main.lua',
-    'config/c_medical.lua',
-    'config/c_playerlist.lua'
+dependencies {
+    'ox_lib',
+    'ND_Core'
 }
-
 
 chat_theme "Stoic-Chat" {
     styleSheet = 'html/style.css',
