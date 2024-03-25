@@ -37,18 +37,23 @@ function sendChatMessage(playerId, message)
         local firstname = player.getData("firstname")
         local lastname = player.getData("lastname")
 
-        local function_check, msg = chatblacklist(message)
+        if message then
+            local function_check, msg = chatblacklist(message)
 
-        if not function_check then
-            local playerName = string.format("%s %s", firstname, lastname)
-            TriggerClientEvent('chatMessage', playerId, playerName, {255, 255, 255}, message)
+            if not function_check then
+                local playerName = string.format("%s %s", firstname, lastname)
+                TriggerClientEvent('chatMessage', playerId, playerName, {255, 255, 255}, message)
+            else
+                sendErrorMessage(playerId, "Your message contains profanity.")
+            end
         else
-            sendErrorMessage(playerId, "Your message contains profanity.")
+            print("Error: Message is nil.")
         end
     else
         print("Error: Player not found.")
     end
 end
+
 
 function sChatBubble(targetPlayer, senderInfo, message)
     local imageUrl = Config.DefaultTag.ImageUrl
